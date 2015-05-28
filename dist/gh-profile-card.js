@@ -92,7 +92,7 @@ ghProfileCardProto.createdCallback = function () {
   };
 
   var creds = {
-    'Authorization': 'token ' + '94206134deb47b302e329cd3d13dd49e67fa35f1'
+    'Authorization': 'token ' + '571f889576e72ea987d4877ea51de8b644af3415'
   };
     ajax.get(attrs.url + attrs.username, creds)
       .then(function (ghData) {
