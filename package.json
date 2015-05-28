@@ -1,0 +1,22 @@
+{
+  "name": "gh-profile-card",
+  "version": "0.0.1",
+  "description": "Small demo of custom element",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "alite": "^0.0.2"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.1"
+  },
+  "scripts": {
+    "build": "npm run clean && mkdir dist && browserify src/gh-profile-card.js -o dist/gh-profile-card.js && cp src/index.html dist/index.html && cp -r src/images dist/images",
+    "clean": "rm -rf dist",
+    "serve": "cd dist && python -m SimpleHTTPServer"
+  },
+  "author": "Calvin Webster <calweb@gmail.com>",
+  "license": "MIT"
+}
