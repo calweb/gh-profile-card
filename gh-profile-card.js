@@ -91,10 +91,8 @@ ghProfileCardProto.createdCallback = function () {
       username: this.getAttribute('data-username')
   };
 
-  var creds = {
-    'Authorization': 'token ' + 'ae8c16622d2797b2856882a0de0f0b40ef9aae7a'
-  };
-    ajax.get(attrs.url + attrs.username, creds)
+
+    ajax.get(attrs.url + attrs.username)
       .then(function (ghData) {
         img.alt = attrs.username;
         img.width = '150';
